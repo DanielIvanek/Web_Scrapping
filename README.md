@@ -49,7 +49,6 @@ Výstupní CSV soubor bude mít následující strukturu:
 
 - Skript může být rozšířen nebo upraven pro další analýzu dat podle vašich potřeb.
 
-- Používejte tento skript zodpovědně a v souladu s právními předpisy.
 
 
 
