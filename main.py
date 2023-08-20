@@ -1,5 +1,5 @@
 """
-projekt_3.py: třetí projekt do Engeto Online Python Akademie
+WEB_Scapping: třetí projekt 
 author: Daniel Ivánek 
 email: ivanek.daniel99@gmail.com
 discord: Notme#1275
