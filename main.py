@@ -4,7 +4,9 @@ author: Daniel Ivánek
 email: ivanek.daniel99@gmail.com
 discord: Notme#1275
 """
-
+"""
+Vytvoreno na rychlo s pomoci ai, kvuli uradu prace. Nasledne projekt predelam podle sebe. 
+"""
 
 import sys
 import csv
