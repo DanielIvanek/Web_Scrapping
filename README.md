@@ -44,11 +44,5 @@ Výstupní CSV soubor bude mít následující strukturu:
 
 - Používejte tento skript zodpovědně a v souladu s právními předpisy.
 
-## Autor
 
-Tento skript byl vytvořen [Vaším Jménem].
-
-## Licence
-
-Tento projekt je licencován pod [název licence]. Pro více informací se podívejte do souboru [LICENSE](LICENSE).
 
