@@ -1,21 +1,23 @@
 """
-projekt_3.py: třetí projek
-author: Daniel Ivánek
+projekt_3.py: třetí projekt do Engeto Online Python Akademie
+author: Daniel Ivánek 
 email: ivanek.daniel99@gmail.com
-discord: notme1275
+discord: Notme#1275
 """
+
 
 import sys
 import csv
 from bs4 import BeautifulSoup
 import requests
+# import pandas
 
-# ověření správně zadaných argumentů
+# arguments checks
 def check_arguments():
     if len(sys.argv) != 3:
         print("You need to enter exactly two arguments")
         exit()
-    elif not sys.argv[1].startswith("https://volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=12&xnumnuts=7103"):
+    elif not sys.argv[1].startswith("https://volby.cz"):
         print("Entered URL adress is not acceptable")
         exit()
     elif not sys.argv[2].endswith(".csv"):
@@ -23,26 +25,26 @@ def check_arguments():
         exit()
 
 
-# získá url z prvního argumentu a pomocí BeautifulSoup převede url
+# retreive url adress from web
 def get_url():
     main_url = sys.argv[1]
     response = requests.get(main_url)
     soup = BeautifulSoup(response.text, "html.parser")
     return soup
 
-# získá číselné označení obcí
+# retreive codes of towns from table
 def get_town_codes():
     code_elements = get_url().find_all("td", {"class": "cislo"})
     codes = [code.get_text() for code in code_elements]
     return codes
 
-# získá názvy obcí
+# retreive names of towns from table
 def get_town_names():
     town_elements = get_url().find_all("td", {"class": "overflow_name"})
     town_names = [town.get_text() for town in town_elements]
     return town_names
 
-# vytvoří list s jednotlivými url obcí
+# Create a list with towns urls
 def get_codes_url():
     url_towns = get_url().find_all("td", {"class": "cislo"})
     url_list = []
