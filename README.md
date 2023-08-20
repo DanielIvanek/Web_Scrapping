@@ -22,6 +22,10 @@ Před spuštěním skriptu ujistěte se, že máte nainstalované potřebné kni
 
    - `<URL volebních výsledků>` musí být platná URL adresa volebních výsledků na webu "[https://volby.cz/pls/ps2017nss/](https://volby.cz/pls/ps2017nss/ps3?xjazyk=CZ)".
    - `<Název výstupního CSV souboru>` musí být název souboru, do kterého chcete uložit data ve formátu CSV (např. "volebni_vysledky.csv").
+     Příklad spuštění v terminálu
+      ```bash
+    PS C:\Users\Ivane\Engeto_Python_2023\Web_Scrapping>  python main.py "https://volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=12&xnumnuts=7103" prostejov_vysl.csv
+    ```
 
 3. Po dokončení scrapingu budete mít vytvořený CSV soubor s výsledky v aktuálním adresáři.
 
