@@ -1,4 +1,4 @@
-# Election scraper
+# Web Scraping
 # Volební Výsledky Scraper
 
 Tento skript je určen k scrapování dat z volebních výsledků z webových stránek "https://volby.cz/pls/ps2017nss/". Získaná data jsou ukládána do CSV souboru.
