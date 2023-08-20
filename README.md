@@ -20,7 +20,7 @@ Před spuštěním skriptu ujistěte se, že máte nainstalované potřebné kni
     python scraper.py <URL volebních výsledků> <Název výstupního CSV souboru>
     ```
 
-   - `<URL volebních výsledků>` musí být platná URL adresa volebních výsledků na webu "https://volby.cz/pls/ps2017nss/".
+   - `<URL volebních výsledků>` musí být platná URL adresa volebních výsledků na webu "[https://volby.cz/pls/ps2017nss/](https://volby.cz/pls/ps2017nss/ps3?xjazyk=CZ)".
    - `<Název výstupního CSV souboru>` musí být název souboru, do kterého chcete uložit data ve formátu CSV (např. "volebni_vysledky.csv").
 
 3. Po dokončení scrapingu budete mít vytvořený CSV soubor s výsledky v aktuálním adresáři.
