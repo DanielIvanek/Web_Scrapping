@@ -10,8 +10,8 @@ Před spuštěním skriptu ujistěte se, že máte nainstalované potřebné kni
 1. Stažení repozitáře:
 
     ```bash
-    git clone <URL repozitáře>
-    cd volebni-vysledky-scraper
+    Installing Python Packages From a Requirements File
+    pip install -r requirements.txt
     ```
 
 2. Spuštění skriptu s následujícími argumenty:
@@ -24,6 +24,8 @@ Před spuštěním skriptu ujistěte se, že máte nainstalované potřebné kni
    - `<Název výstupního CSV souboru>` musí být název souboru, do kterého chcete uložit data ve formátu CSV (např. "volebni_vysledky.csv").
 
 3. Po dokončení scrapingu budete mít vytvořený CSV soubor s výsledky v aktuálním adresáři.
+
+
 
 ## Struktura Výstupního CSV Souboru
 
